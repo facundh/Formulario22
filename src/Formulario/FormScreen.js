@@ -13,7 +13,7 @@ const FormScreen = () => {
 
 {
   
-    <button className='btn btn-outline-primary' onClick={handleToggleShow}>
+    <button className='btn btn-outline-primary text-center' onClick={handleToggleShow}>
        {!show ? 'Crear Formulario' :' Cerrar Formulario' } 
     </button>
     
