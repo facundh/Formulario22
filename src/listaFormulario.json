@@ -1,0 +1,59 @@
+{
+    "formularios":  [
+        {
+            "nombre": "Formulario Dinamico",
+            "campos": [
+                {
+                    "label": "Name",
+                    "type": "text",
+                    "format":"string",
+                    "required": true
+                },
+                {
+                    "label": "Lastname",
+                    "type": "text",
+                    "format":"string",
+                    "required": true
+                },
+                { 
+                    "label": "Email ",
+                    "type": "text ",
+                    "format":"email ",
+                    "validation": "required"
+                },
+                {
+                    "label": "Telephone",
+                    "type": "number",
+                    "validation": "required"
+                },
+                {
+                    "name": "Gender",
+                    "label":"Male",
+                    "type": "radio",
+                    "style":"form-check-input"
+
+                },
+                {
+                    "name": "Gender",
+                    "label": "Female",
+                    "type": "radio",
+                    "style":"form-check-input"
+                },
+                {
+                    "label": "Accept conditions",
+                    "type": "checkbox",
+                    "style":"form-check-input"
+
+                },
+                {
+                    "name": "Confirmar",
+                    "type": "submit",
+                    "validation": "required",
+                    "style":"btn btn-primary mx-auto w-100"
+                }
+                
+            ]
+        }
+      
+    ]
+}

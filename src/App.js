@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Rutas from './routes/Rutas';
+import AuthContext, { AuthConsumer } from './context/Auth/AuthProvider';
+import FormProvider from './context/Form/FormProvider';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AuthContext>
+        <FormProvider>
+          <Rutas/>
+        </FormProvider>
+      </AuthContext>
+    </>
   );
 }
 
